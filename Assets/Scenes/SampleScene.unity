@@ -393,7 +393,7 @@ Transform:
   m_GameObject: {fileID: 1643636005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.61, z: 0}
-  m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
+  m_LocalScale: {x: 8.02758, y: 8.02758, z: 8.02758}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -431,7 +431,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &1909491860
 Transform:
@@ -459,10 +459,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1909491858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 823cb1942d0f7254b82e9071df872876, type: 3}
+  m_Script: {fileID: 11500000, guid: ca4f0430ac011754da828bc781fea830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCamera: {fileID: 963194227}
+  Speed: 5
+  DiagonalModifier: 0
 --- !u!1 &2007230684
 GameObject:
   m_ObjectHideFlags: 0
