@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float Speed;
 
     private Vector3 PlayerMovementInput;
-    private Vector3 PosizioneMouse;
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +20,6 @@ public class PlayerController : MonoBehaviour
     {
         PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         MovePlayer(); 
-
-        Vector3 PosizioneMouse = Input.mousePosition;
-        PosizioneMouse = Camera.main.ScreenToWorldPoint(PosizioneMouse);
-
-        Vector2 Direzione = new Vector2(PosizioneMouse.x - transform.position.x, PosizioneMouse.y - transform.position.y);
-        transform.forward = Direzione;
     }
 
     private void MovePlayer()
