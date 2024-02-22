@@ -21,6 +21,7 @@ public class MeleeAttack : MonoBehaviour
     void Start()
     {
         timer = MaxTimer;
+        timerDespawn = MaxTimerDespawn;
     }
     
     void Update()
@@ -30,24 +31,24 @@ public class MeleeAttack : MonoBehaviour
             if(ArmaSpawn) 
             {
                 NoHit();
+                timerDespawn = MaxTimerDespawn;
             }
             else 
             {
                 Hit();
-                
-                timerDespawn += Time.deltaTime;
-                if (timerDespawn > MaxTimerDespawn)
-                {
-                    Spada.SetActive(false);
-                    ArmaSpawn = false;
-                }
-
                 timer = MaxTimer;
+                timerDespawn -= Time.deltaTime;
             }
         }
         else 
         {
             timer -= Time.deltaTime;
+        }
+
+        if (timerDespawn <= 0f)
+        {
+            Spada.SetActive(false);
+            ArmaSpawn = false;
         }
         
     }

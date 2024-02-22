@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Spada: {fileID: 8992801711061864029}
   MaxTimer: 1
-  MaxTimerDespawn: 1
+  MaxTimerDespawn: 2
 --- !u!1 &5714728142566862076
 GameObject:
   m_ObjectHideFlags: 0
