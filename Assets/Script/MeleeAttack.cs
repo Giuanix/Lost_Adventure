@@ -5,60 +5,54 @@ using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
     public static bool ArmaSpawn = false;
-
     public GameObject Spada;
-
+    
     private float timer;
-
-    private float timerDespawn;
-
     public float MaxTimer;
-
-    public float MaxTimerDespawn;
+    public float TimerDespawn;
     
-    
-
     void Start()
     {
         timer = MaxTimer;
-        timerDespawn = MaxTimerDespawn;
     }
     
     void Update()
     {
+        //Gestione dell'attacco melee
         if (timer <= 0f && Input.GetKey(KeyCode.Mouse0))
         {
             if(ArmaSpawn) 
             {
                 NoHit();
-                timerDespawn = MaxTimerDespawn;
             }
             else 
             {
                 Hit();
                 timer = MaxTimer;
-                timerDespawn -= Time.deltaTime;
+                Invoke("DespawnSpada",TimerDespawn);
             }
         }
         else 
         {
             timer -= Time.deltaTime;
-        }
-
-        if (timerDespawn <= 0f)
-        {
-            Spada.SetActive(false);
-            ArmaSpawn = false;
-        }
-        
+        } 
     }
 
+    //Funzione della scomparsa dell'arma post attacco
+    void DespawnSpada()
+    {
+        Spada.SetActive(false);
+        ArmaSpawn = false;
+    }
+
+    //Funzione dell'arma in stato di riposo
     void NoHit()
     {
         Spada.SetActive(false);
         ArmaSpawn = false;
     }
 
+    //Funzione dell'arma in stato di attacco
     void Hit()
     {
         Spada.SetActive(true);
