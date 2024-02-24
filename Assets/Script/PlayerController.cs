@@ -11,13 +11,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Modello;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Richiamo della Funzione di movimento del player
