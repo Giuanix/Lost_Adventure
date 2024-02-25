@@ -51,10 +51,5 @@ public class HealthSystem : MonoBehaviour
         {
             Gemma[7].gameObject.SetActive(false);
         }
-
-        if(Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            Life-=1;
-        }
     }
 }
