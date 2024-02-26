@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9215861408376065595}
   m_Layer: 0
   m_Name: PF_PortaBoss
-  m_TagString: Untagged
+  m_TagString: PortaBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7692459753342531979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6951394, y: -4.7902536, z: -1.4075605}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45,15 +45,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 830a7cecf62c8614aa50a0f6d22ff966, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.809107
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 830a7cecf62c8614aa50a0f6d22ff966, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4002523
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 830a7cecf62c8614aa50a0f6d22ff966, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.045685
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 830a7cecf62c8614aa50a0f6d22ff966, type: 3}
       propertyPath: m_LocalRotation.w
