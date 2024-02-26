@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 5714728142536658101}
   - component: {fileID: 4917455010743532150}
   - component: {fileID: 8032173270820299282}
+  - component: {fileID: 6523801633639853767}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Player
@@ -212,6 +213,20 @@ MonoBehaviour:
   BulletSpeed: 15
   TimerDespawn: 3
   MaxTimer: 3
+--- !u!114 &6523801633639853767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714728142536658098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f299c7a245c89e4eb340079d8b9afee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumeroChiavi: 0
+  Porta: {fileID: 0}
 --- !u!1 &5714728142566862076
 GameObject:
   m_ObjectHideFlags: 0
