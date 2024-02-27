@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumeroChiavi: 0
-  Porta: {fileID: 0}
+  Porta: {fileID: 7692459753342531979, guid: bb07ad8477553f74eb12e7a16f34c56d, type: 3}
 --- !u!1 &5714728142566862076
 GameObject:
   m_ObjectHideFlags: 0

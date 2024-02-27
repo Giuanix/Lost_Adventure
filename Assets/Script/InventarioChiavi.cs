@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventarioChiavi : MonoBehaviour
 {
     public int NumeroChiavi = 0;
-    public GameObject Porta;
+    public GameObject PortoneDelBoss;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +17,12 @@ public class InventarioChiavi : MonoBehaviour
         NumeroChiavi++;
     }
 
-    void update()
+    void Update()
     {
         if(NumeroChiavi==4)
         {
-            Destroy(Porta);
-        }
+            Destroy(PortoneDelBoss);
+            NumeroChiavi = 0;
+        }  
     }
 }

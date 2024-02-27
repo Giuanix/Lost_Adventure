@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9215861408376065595}
-  - component: {fileID: 3794640089537964748}
   m_Layer: 0
   m_Name: PF_PortaBoss
   m_TagString: PortaBoss
@@ -33,19 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3794640089537964748
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7692459753342531979}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.66163, y: 7.2697835, z: 5.555922}
-  m_Center: {x: 0.2110058, y: 3.1348917, z: -2.0279992}
 --- !u!1001 &5963153704911931239
 PrefabInstance:
   m_ObjectHideFlags: 0
