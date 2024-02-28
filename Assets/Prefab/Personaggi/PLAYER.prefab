@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 5714728142536658100}
   - component: {fileID: 8227920534210604577}
   - component: {fileID: 5714728142536658099}
+  - component: {fileID: 7621713003910678239}
   - component: {fileID: 5714728142536658101}
   - component: {fileID: 4917455010743532150}
   - component: {fileID: 8032173270820299282}
@@ -146,10 +147,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.33
-  m_Height: 4.54
+  m_Radius: 1.1
+  m_Height: 4.1
   m_Direction: 1
-  m_Center: {x: 0, y: 0.84, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!54 &5714728142536658099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,6 +167,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &7621713003910678239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714728142536658098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4585d107f13b329488a6030d9c76c941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gemma:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MaxLife: 8
+  MaxTimer: 0.01
 --- !u!114 &5714728142536658101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NumeroChiavi: 0
-  Porta: {fileID: 7692459753342531979, guid: bb07ad8477553f74eb12e7a16f34c56d, type: 3}
+  PortoneDelBoss: {fileID: 0}
 --- !u!1 &5714728142566862076
 GameObject:
   m_ObjectHideFlags: 0

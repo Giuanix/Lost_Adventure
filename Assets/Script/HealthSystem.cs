@@ -15,7 +15,6 @@ public class HealthSystem : MonoBehaviour
     {
         Life = MaxLife;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -50,6 +49,14 @@ public class HealthSystem : MonoBehaviour
         else if (Life < 8)
         {
             Gemma[7].gameObject.SetActive(false);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.CompareTag("Trappola"))
+        {
+            Life-=1;
         }
     }
 }

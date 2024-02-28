@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chiave
   - PortaBoss
+  - Trappola
   layers:
   - Default
   - TransparentFX
