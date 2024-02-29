@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chiave : MonoBehaviour
 {
     public float rotationSpeed = 100.0f;
+    
     public GameObject CancelloShortcut;
     
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class Chiave : MonoBehaviour
         {
             col.gameObject.SendMessage("IncrementoChiavi");
             Destroy(gameObject);
-            Destroy(CancelloShortcut);
+            CancelloShortcut.GetComponent<Animator>().Play("ApriCancello");
         }
     }
 }
