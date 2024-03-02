@@ -5,22 +5,61 @@ using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
-    public GameObject[] Gemma;
+    public GameObject[] Gemma; //Contenitore per le icone della vita
 
-    int Life;
+    public GameObject Checkpoint; //Variabile contenente il punto di respawn del checkpoint
 
-    public int MaxLife;
-    // Start is called before the first frame update
+    public GameObject CheckpointImage; //Variabile che contine l'immagine del checkpoint
+
+    Vector3 SpawnPoint; //Variabile che contiene la posizione vettoriale del punto di spawn del checkpoint
+
+    public float MaxInvincibilita; //Variabile che setta il timer massimo di invincibilità
+
+    private float Invincibilita; //Variabile che contiene il tempo di invincibilità
+
+    int Life; //Variabile che contiene la quantità di vita del PG
+
+    public int MaxLife; //Variabile che contiene la quantità massima di vita del PG
+
+    public float MaxTimerCheckpoint;
+
+    private float TimerCheckpoint;
+
     void Start()
     {
         Life = MaxLife;
+        SpawnPoint = gameObject.transform.position;
     }
     // Update is called once per frame
     void Update()
     {
+        if(Invincibilita > 0)
+        {
+            Invincibilita -= Time.deltaTime;
+        }
+
+        if(TimerCheckpoint > 0)
+        {
+            TimerCheckpoint -= Time.deltaTime;
+        }
+        
+        if(TimerCheckpoint == 0)
+        {
+            CheckpointImage.gameObject.SetActive(false);
+        }
+
         if(Life < 1)
         {
-            //SceneManager.LoadScene(GameOver);
+            gameObject.transform.position = SpawnPoint;
+            Life = MaxLife;
+
+            Gemma[1].gameObject.SetActive(true);
+            Gemma[2].gameObject.SetActive(true);
+            Gemma[3].gameObject.SetActive(true);
+            Gemma[4].gameObject.SetActive(true);
+            Gemma[5].gameObject.SetActive(true);
+            Gemma[6].gameObject.SetActive(true);
+            Gemma[7].gameObject.SetActive(true);
         }
         else if(Life < 2)
         {
@@ -56,7 +95,22 @@ public class HealthSystem : MonoBehaviour
     {
         if(col.CompareTag("Trappola"))
         {
-            Life-=1;
+            if (Invincibilita <= 0)
+            {
+                Life -= 1;
+                Invincibilita = MaxInvincibilita;
+            }
+        }
+
+        if(col.gameObject.CompareTag("Chiave"))
+        {
+            if(TimerCheckpoint <= 0)
+            {
+                CheckpointImage.gameObject.SetActive(true);
+                TimerCheckpoint = MaxTimerCheckpoint;
+            }
+            
+            SpawnPoint = Checkpoint.transform.position;
         }
     }
 }
