@@ -42,8 +42,7 @@ public class HealthSystem : MonoBehaviour
         {
             TimerCheckpoint -= Time.deltaTime;
         }
-        
-        if(TimerCheckpoint == 0)
+        else
         {
             CheckpointImage.gameObject.SetActive(false);
         }

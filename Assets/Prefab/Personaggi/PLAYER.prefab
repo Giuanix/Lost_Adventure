@@ -188,8 +188,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  Checkpoint: {fileID: 0}
+  CheckpointImage: {fileID: 0}
   MaxInvincibilita: 1
   MaxLife: 8
+  MaxTimerCheckpoint: 4
 --- !u!114 &5714728142536658101
 MonoBehaviour:
   m_ObjectHideFlags: 0
