@@ -21,9 +21,9 @@ public class HealthSystem : MonoBehaviour
 
     public int MaxLife; //Variabile che contiene la quantità massima di vita del PG
 
-    public float MaxTimerCheckpoint;
+    public float MaxTimerCheckpoint; //Variabile che contiene la quantita massima del tempo di visione della dicitura "Checkpoint raggiunto" 
 
-    private float TimerCheckpoint;
+    private float TimerCheckpoint; //Variabile che contiene la quantita di tempo di visione della dicitura "Checkpoint raggiunto" 
 
     void Start()
     {
