@@ -7,6 +7,8 @@ public class Chiave : MonoBehaviour
     public float rotationSpeed = 100.0f;
     
     public GameObject CancelloShortcut;
+
+    public ContatoreHUD manager; 
     
     // Update is called once per frame
     void Update()
@@ -21,6 +23,7 @@ public class Chiave : MonoBehaviour
             col.gameObject.SendMessage("IncrementoChiavi");
             Destroy(gameObject);
             CancelloShortcut.GetComponent<Animator>().Play("ApriCancello");
+            manager.TotaleChiavi=manager.TotaleChiavi+1;
         }
     }
 }

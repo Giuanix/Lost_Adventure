@@ -8,10 +8,15 @@ public class BauleTesoro : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.tag == "Arma")
         {
             col.gameObject.SendMessage("AperturaBaule");
-            Baule.GetComponent<Animator>().Play("BauleAperto");
+            //Baule.GetComponent<Animator>().Play("BauleAperto");
         }
+    }
+
+    void AperturaBaule()
+    {
+        Baule.GetComponent<Animator>().Play("BauleAperto");
     }
 }

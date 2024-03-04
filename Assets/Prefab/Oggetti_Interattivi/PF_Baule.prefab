@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3253720634979602577}
   - component: {fileID: 2113896225004936278}
-  - component: {fileID: 493325706276239342}
-  - component: {fileID: 3492786487026305809}
+  - component: {fileID: 6114319636261275240}
+  - component: {fileID: 3615183216900327986}
   m_Layer: 0
   m_Name: PF_Baule
   m_TagString: Baule
@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f8269a148712942aa3be64451b50e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Baule: {fileID: 0}
---- !u!65 &493325706276239342
+  Baule: {fileID: 552139228526348773}
+--- !u!65 &6114319636261275240
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,12 +56,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552139228526348773}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4170465, y: 2.5531075, z: 2.9636126}
-  m_Center: {x: -0.74446416, y: 1.0129532, z: -1.2083726}
---- !u!95 &3492786487026305809
+  m_Size: {x: 2.21, y: 2.53, z: 2.92}
+  m_Center: {x: -0.7591496, y: 1.020417, z: -1.200728}
+--- !u!95 &3615183216900327986
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -123,6 +123,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c98c44388e8e74c4788c66769f8cde0c, type: 3}
       propertyPath: m_Name
       value: M_Cassa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c98c44388e8e74c4788c66769f8cde0c, type: 3}
+      propertyPath: m_TagString
+      value: Baule
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c98c44388e8e74c4788c66769f8cde0c, type: 3}
