@@ -9,7 +9,7 @@ public class BauleTesoro : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Arma"))
         {
-            Baule.GetComponent<Animator>().Play("BauleAnim");
+            Baule.GetComponent<Animator>().Play("BauleAperto");
         }
     }
 }
