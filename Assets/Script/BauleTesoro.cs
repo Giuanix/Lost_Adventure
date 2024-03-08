@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BauleTesoro : MonoBehaviour
 {
+    public GameObject Baule;
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.CompareTag("Arma"))
         {
-            col.gameObject.SendMessage("ApriBaule");
+            Baule.GetComponent<Animator>().Play("BauleAnim");
         }
     }
 }

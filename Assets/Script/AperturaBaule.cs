@@ -6,7 +6,7 @@ public class AperturaBaule : MonoBehaviour
 {
     public GameObject Baule;
     
-    void ApriBaule()
+    public void ApriBaule()
     {
         Baule.GetComponent<Animator>().Play("BauleAperto");
     }

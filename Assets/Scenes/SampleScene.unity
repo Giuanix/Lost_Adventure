@@ -256,11 +256,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6dde9074b6d8334a8da226842130637, type: 3}
---- !u!1 &459495761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 552139228526348773, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
-  m_PrefabInstance: {fileID: 970136517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482896710
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,24 +513,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640818884}
   m_CullTransparentMesh: 1
---- !u!1 &730453931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5714728142536658098, guid: 85d4581dc1e69fd458c93f9e7069980f, type: 3}
-  m_PrefabInstance: {fileID: 1060337628}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &730453940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730453931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12ee8931ab37ba34c8db50ce2c7ae109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Baule: {fileID: 459495761}
 --- !u!1 &870428670
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +774,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3253720634979602577, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293166435033262147, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293166435033262147, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293166435033262147, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293166435033262147, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293166435033262147, guid: 809f14c669436bd46a50cea5159329e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
