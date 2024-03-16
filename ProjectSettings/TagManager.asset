@@ -9,6 +9,8 @@ TagManager:
   - Trappola
   - Arma
   - Baule
+  - BauleArma
+  - BauleMagia
   layers:
   - Default
   - TransparentFX

@@ -5,15 +5,22 @@ using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
     public static bool ArmaSpawn = false;
+
     public GameObject Spada;
+    public GameObject Ascia;
+
+    private GameObject ArmaEquipaggiata; //Variabile che tiene conto dell'arma attualmente equipaggiata
     
-    private float timer;
-    public float MaxTimer;
-    public float TimerDespawn;
-    
+    private float timer; //Variabile che controlla la cadenza di attacco
+    public float MaxTimer; //Variabile che controlla la cadenza massima di attacco
+    public float TimerDespawn; //Variabile che controlla il timer di despawn dell'arma
+
+    public float TimerPerSwitchArma; //Variabile che controlla se possiblile lo switch dell'arma
+
     void Start()
     {
         timer = MaxTimer;
+        ArmaEquipaggiata = Spada;
     }
     
     void Update()
@@ -41,21 +48,30 @@ public class MeleeAttack : MonoBehaviour
     //Funzione della scomparsa dell'arma post attacco
     void DespawnSpada()
     {
-        Spada.SetActive(false);
+        ArmaEquipaggiata.SetActive(false);
         ArmaSpawn = false;
     }
 
     //Funzione dell'arma in stato di riposo
     void NoHit()
     {
-        Spada.SetActive(false);
+        ArmaEquipaggiata.SetActive(false);
         ArmaSpawn = false;
     }
 
     //Funzione dell'arma in stato di attacco
     void Hit()
     {
-        Spada.SetActive(true);
-        ArmaSpawn= true;
-    }   
+        ArmaEquipaggiata.SetActive(true);
+        ArmaSpawn = true;
+    } 
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("BauleArma"))
+        {
+            ArmaEquipaggiata = Ascia;
+            Destroy(Spada);
+        }
+    }  
 }

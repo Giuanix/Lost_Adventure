@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class MagicalAttack : MonoBehaviour
 {
-    public Transform BulletSpawnPoint;
-    public GameObject Bullet;
+    public Transform ProiettileSpawnPoint;
+
+    public GameObject ProiettileEquipaggiato;
+    public GameObject ProiettileBase;
+    public GameObject ProiettilePotenziato;
+
     public float BulletSpeed;
     public float TimerDespawn;
 
     private float timer;
     public float MaxTimer;
 
+    void Start()
+    {
+        ProiettileEquipaggiato = ProiettileBase;
+    }
+
     void Update()
     {
         if(timer <= 0f && Input.GetKeyDown(KeyCode.Mouse1))
         {
-            var bullet = Instantiate(Bullet,BulletSpawnPoint.position, BulletSpawnPoint.rotation);
-            bullet.GetComponent<Rigidbody>().velocity = BulletSpawnPoint.forward * BulletSpeed;
+            var bullet = Instantiate(ProiettileEquipaggiato,ProiettileSpawnPoint.position, ProiettileSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = ProiettileSpawnPoint.forward * BulletSpeed;
             Destroy(bullet, TimerDespawn);
             timer = MaxTimer;
         }
@@ -26,4 +35,12 @@ public class MagicalAttack : MonoBehaviour
             timer -= Time.deltaTime;
         }
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("BauleMagia"))
+        {
+            ProiettileEquipaggiato = ProiettilePotenziato;
+        }
+    }  
 }
