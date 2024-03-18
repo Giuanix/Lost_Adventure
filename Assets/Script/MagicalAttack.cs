@@ -6,7 +6,8 @@ public class MagicalAttack : MonoBehaviour
 {
     public Transform ProiettileSpawnPoint;
 
-    public GameObject ProiettileEquipaggiato;
+    private GameObject ProiettileEquipaggiato;
+
     public GameObject ProiettileBase;
     public GameObject ProiettilePotenziato;
 
