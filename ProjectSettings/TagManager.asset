@@ -7,11 +7,12 @@ TagManager:
   - Chiave
   - PortaBoss
   - Trappola
-  - Arma
   - Baule
   - BauleArma
   - BauleMagia
-  - Nemico
+  - Guardia
+  - Spada
+  - Ascia
   layers:
   - Default
   - TransparentFX

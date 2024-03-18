@@ -238,7 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProiettileSpawnPoint: {fileID: 2138402546357724869}
-  ProiettileEquipaggiato: {fileID: 0}
   ProiettileBase: {fileID: 5339216713802646530, guid: f4fb81edeb9a19b4bae2fe3ced79ecf4, type: 3}
   ProiettilePotenziato: {fileID: 3273997662905943638, guid: 361a4a63215d9d145b6b7c4e4f3f69cc, type: 3}
   BulletSpeed: 15
@@ -468,7 +467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7465247089853780208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.75}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

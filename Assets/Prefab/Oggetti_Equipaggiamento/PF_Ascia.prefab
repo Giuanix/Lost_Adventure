@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 482497508181681128}
   m_Layer: 0
   m_Name: PF_Ascia
-  m_TagString: Arma
+  m_TagString: Ascia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 87bc4fcfa19eed040b23a3ea43695ced, type: 3}
       propertyPath: m_TagString
-      value: Arma
+      value: Ascia
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87bc4fcfa19eed040b23a3ea43695ced, type: 3}

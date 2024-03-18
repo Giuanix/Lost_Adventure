@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6183594435836260470}
   m_Layer: 0
   m_Name: PF_Spada
-  m_TagString: Arma
+  m_TagString: Spada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 402e5a04594cc1541a5892264b681c68, type: 3}
       propertyPath: m_TagString
-      value: Arma
+      value: Spada
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 402e5a04594cc1541a5892264b681c68, type: 3}

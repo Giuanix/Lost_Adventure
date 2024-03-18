@@ -695,11 +695,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 6d8c7030-2994-4cf6-8ccb-5b9ef60f4ba3
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Lost_Adventure
+  organizationId: giuanix
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
