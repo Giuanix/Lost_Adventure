@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 100
   CancelloShortcut: {fileID: 0}
+  manager: {fileID: 0}
 --- !u!65 &8180188702751383443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -140,7 +141,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
